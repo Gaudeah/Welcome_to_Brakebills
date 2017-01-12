@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Brakebills</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/snow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    if (get_cookie('student')) {
+        document.location.href = "schedule.html";
+    }
+</script>
+<audio autoplay loop>
+    <source src="assets/brakebills.mp3" type="audio/mpeg">
+</audio>
+<div id="loginform" onmouseenter="contain_mouse();" onmouseleave="contain_mouse();">
+    <div class="container" onclick="button_menu_click()">
+        <div id="login" onmouseenter="form_mouse();" onmouseleave="form_mouse();">
+            <img src="assets/img/Logo.png" alt="scroll" width="80px">
+            <p>login</p>
+            <input type="text" placeholder="Nom de compte" id="logintext">
+            <p>Magic password</p>
+            <input type="password" placeholder="Password" id="password"><br>
+            <button onclick="connect();">Connection</button>
+        </div>
+    </div>
+</div>
+<nav>
+    <button id="menu" onclick="button_menu_click();" onmouseenter="button_point_enter();"
+            onmouseleave="button_point_leave();">.
+    </button>
+</nav>
+</body>
+</html>

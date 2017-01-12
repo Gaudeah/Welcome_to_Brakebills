@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/schedule.js"></script>
+    <script src="assets/js/snow.js"></script>
+</head>
+<script>
+    if (!get_cookie('student')) {
+        document.location.href = "index.html";
+    }
+</script>
+<body>
+<ul class="tab">
+    <li><a href="javascript:void(0);" class="onglet" id="fontong" onclick="changeTab(event, 'today');">Today</a></li>
+    <li><a href="javascript:void(0);" class="onglet" id="fontong" onclick="changeTab(event, 'tomorrow')">Tomorrow</a>
+    </li>
+</ul>
+<div id="today">
+    <div class="title">
+        <h2>Today</h2>
+        <p>This is your timetable for today</p>
+    </div>
+    <div class="tabcontent">
+    </div>
+</div>
+<div id="tomorrow">
+    <div class="title">
+        <button id="save" onclick="post_json();">Save your changes</button>
+        <h2>Tomorrow</h2>
+        <p>This is your timetable for tomorrow</p>
+    </div>
+    <div id="contain">
+        <div class="column">
+            <div class="registered">
+                <h2>Registered</h2>
+            </div>
+            <div class="tabcontent tabcontent1">
+            </div>
+        </div>
+        <div class="column">
+            <div class="registered">
+                <h2>Not Registered</h2>
+            </div>
+            <div class="tabcontent tabcontent1">
+            </div>
+        </div>
+    </div>
+</div>
+<audio autoplay loop>
+    <source src="assets/brakebills.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>

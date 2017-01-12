@@ -1,0 +1,217 @@
+
+
+html, body, ul, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('background.jpg') center no-repeat fixed black;
+    background-size: cover;
+    position: relative;
+    font-family: 'Marck Script', cursive;
+}
+
+hr {
+    color: white;
+}
+
+nav {
+    height: 60px;
+    line-height: 60px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+button#menu {
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid rgba(255,215,0,0.7);
+    border-radius: 1px;
+    background: transparent;
+
+    text-align: center;
+    color: gold;
+
+    transition: .3s ease;
+}
+
+button#menu:hover {
+    border: 1px solid rgba(255,215,0,0.5);
+    cursor: pointer;
+}
+
+#loginform {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+
+    display:table;
+    margin: 0 auto;
+
+    background-color: rgba(0,0,0,0.6);
+}
+
+#loginform .container {
+    height: 40%;
+    display:table-cell;
+    vertical-align:middle;
+    font-size: 23px;
+}
+#loginform #login {
+    margin: 0 auto;
+    padding: 10px;
+    width: 30%;
+    min-width: 200px;
+
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2px;
+}
+
+#loginform #login button {
+    width: 40%;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid rgba(255,215,0,0.5);
+
+    color: white;
+    font-family: 'Marck Script', cursive;
+    font-size: 17px;
+}
+
+#loginform #login button:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.08);
+    transition: .3s ease;
+}
+
+input {
+    border-radius: 1px;
+    border: 1px solid rgba(0,0,0,0.5);
+    height: 30px;
+    width: 60%;
+    margin-bottom: 15px;
+
+    font-family: 'Marck Script', cursive;
+    font-size: 15px;
+}
+
+ul.tab {
+    list-style-type: none;
+    width: 182px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 215, 0, 0.7);
+    background-color: transparent;
+}
+
+#fontong {
+    color: rgb(255, 215, 0);
+}
+
+ul.tab li {
+    float: left;
+}
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.tab li a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+ul.tab li a:focus, .active {
+    background-color: rgba(255,255,255,0.3);
+}
+
+#today, #tomorrow {
+    display: none;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 0px;
+    background-color: rgba(255,255,255,0.3);
+    min-width: 320px;
+}
+
+#today .title, #tomorrow .title {
+    min-height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.title h2 {
+    margin: 2px;
+}
+
+#tomorrow #contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.tabcontent {
+    display: flex;
+    padding: 6px 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.tabcontent1 {
+    min-width: 400px;
+}
+
+.tabcontent .item {
+    width: 70%;
+    min-height: 200px;
+    min-width: 300px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.item:hover {
+    width: 80%;
+}
+
+.item h4 {
+    padding: 2px;
+    margin: 2px;
+}
+
+#save {
+    float: right;
+    min-height: 67px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0,0,0,0);
+    font-size: 16px;
+    color: white;
+    font-family: 'Marck Script', cursive;
+    cursor: pointer;
+}
+
+#save:hover {
+    background-color: rgba(0,0,0,0.5);
+}
